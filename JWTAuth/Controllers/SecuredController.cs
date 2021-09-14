@@ -18,7 +18,7 @@ namespace JWTAuth.Controllers
             return Ok("This Secured Data is available only for Authenticated Users.");
         }
         [HttpPost]
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> PostSecuredData()
         {
             return Ok("This Secured Data is available only for Administrators.");

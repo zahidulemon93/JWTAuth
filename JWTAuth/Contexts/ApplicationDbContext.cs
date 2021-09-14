@@ -13,5 +13,6 @@ namespace JWTAuth.Contexts
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
     }
 }
